@@ -3,8 +3,8 @@
   <div class="container">
     <section class="section section--hero p-0">
       <blockquote class="blockquote--hero">
-        <h1 style="font-size: 3.5em;" class="hero">Send DAI & ETH</h1>
-        <h1 style="font-size: 3.5em;" class="hero">with NFT e-Cards</h1>
+        <h1 style="font-size: 3.5em;" class="hero">{{ $t("m.sendHongBao")}}</h1>
+        <h1 style="font-size: 3.5em;" class="hero">{{ $t("m.viaWeChat")}}</h1>
         <br>
         <h4>and donate to charity!</h4>
 
@@ -13,7 +13,7 @@
         <img src="/static/images/title1.png">-->
       </blockquote>
 
-      <router-link :to="{ name: 'cardshop' }" class="btn">Send RadiCards!</router-link>
+      <router-link :to="{ name: 'cardshop' }" class="btn">{{ $t("m.sendEthHongbao")}}</router-link>
 
       <div class="compatible">
         <h5>{{ $t("m.compatibleWith")}}</h5>
@@ -42,7 +42,7 @@
         <b-col class cols="12" sm="12" md="4" lg="4">
           <img class="stepIcon" src="/static/images/choose_onesize.svg">
           <h5>{{ $t("m.Choose")}}</h5>
-          <span>E-cards design
+          <span>{{ $t("m.coolHb")}}
             <br>
             <div class="hide-mobile">{{ $t("m.artists")}}</div>
           </span>
@@ -50,14 +50,14 @@
         <b-col class="stepMargin" cols="12" sm="12" md="4" lg="4">
           <img class="stepIcon" src="/static/images/deposit_onesize.svg">
           <h5>{{ $t("m.Deposit")}}</h5>
-          <span>with crypto currency DAI or ETH</span>
+          <span>{{ $t("m.ethOrDai")}}</span>
         </b-col>
         <b-col class="stepMargin" cols="12" sm="12" md="4" lg="4">
           <img class="stepIcon" src="/static/images/send_onesize.svg">
           <h5>{{ $t("m.Send")}}</h5>
-          <span>Send it to your friends
+          <span>{{ $t("m.hb2f")}}
             <br>
-            <div class="hide-mobile">via chatapp</div>
+            <div class="hide-mobile">{{ $t("m.wc&email")}}</div>
           </span>
           <span>
             <br>

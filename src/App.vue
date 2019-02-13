@@ -21,8 +21,8 @@
 
       <nav class="navbar navbar-expand-md">
         <router-link :to="{ name: 'home' }" class="navbar-brand">
-          <h1 class="logo">
-            <img src="/static/images/logo.svg" alt="RadiCards">
+          <h1>
+            <img src="/static/images/logo_cn.svg" alt="ethereum hongbao">
           </h1>
         </router-link>
 
@@ -83,7 +83,7 @@
                 @click="changeLanguage('english')"
                 :class="['button button--tiny', {'isSelected' : language==='english'}]"
               >EN</button>
-              
+
               <button
                 @click="changeLanguage('chinese')"
                 :class="['button button--tiny', {'isSelected' : language==='chinese'}]"
@@ -422,8 +422,8 @@ body {
   padding: 0;
 
   background-color: #ffffff;
-  background-image: url("/static/images/background.svg");
-  background-repeat: no-repeat;
+  background-image: url("/static/images/pattern.svg");
+  background-repeat: repeat;
   background-attachment: static;
   background-position: top left;
 
