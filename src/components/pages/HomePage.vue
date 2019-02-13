@@ -3,10 +3,10 @@
   <div class="container">
     <section class="section section--hero p-0">
       <blockquote class="blockquote--hero">
-        <h1 style="font-size: 3.5em;" class="hero">Send DAI/ETH</h1>
+        <h1 style="font-size: 3.5em;" class="hero">Send DAI & ETH</h1>
         <h1 style="font-size: 3.5em;" class="hero">with NFT e-Cards</h1>
         <br>
-        <h4>and donate to the charity of your choice in one go!</h4>
+        <h4>and donate to charity!</h4>
 
         <!--- <img src="/static/images/title2.png">
         <br>
