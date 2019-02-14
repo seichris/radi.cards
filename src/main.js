@@ -24,7 +24,7 @@ Vue.use(BootstrapVue);
 Vue.use(AsyncComputed);
 
 Vue.use(VueAnalytics, {
-  id: 'UA-133667134-1',
+  id: 'UA-133667134-3',
   router
 })
 

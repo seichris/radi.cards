@@ -5,8 +5,6 @@
       <blockquote class="blockquote--hero">
         <h1 style="font-size: 3.5em;" class="hero">{{ $t("m.sendHongBao")}}</h1>
         <h1 style="font-size: 3.5em;" class="hero">{{ $t("m.viaWeChat")}}</h1>
-        <br>
-        <h4>and donate to charity!</h4>
 
         <!--- <img src="/static/images/title2.png">
         <br>
