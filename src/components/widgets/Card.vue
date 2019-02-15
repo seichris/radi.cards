@@ -315,8 +315,8 @@ export default {
     border-bottom: none;
   }
   &:not(.card--flippable):hover {
-    transform: translateY(2px);
-    transition: all 0.2s ease-in-out;
+    // transform: translateY(2px);
+    // transition: all 0.2s ease-in-out;
   }
 
   &--flippable {
