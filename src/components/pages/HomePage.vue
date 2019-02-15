@@ -8,7 +8,7 @@
       <h4>{{ $t("m.and")}}</h4>
     </blockquote>
   </section>
-  <section class="section">
+  <!--<section class="section">
     <div class="card-slider headerslider" v-if="cards && cards.length > 0">
       <card
         style="margin-right: 1rem;"
@@ -34,7 +34,7 @@
       </div>
       <span class="text">{{ $t("m.gettingCards")}}</span>
     </div>
-  </section>
+  </section>-->
 
 
 
