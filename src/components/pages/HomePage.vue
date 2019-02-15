@@ -122,19 +122,19 @@
       <b-row>
         <b-col cols="12" md="12" lg="4" class="pt-3">
           <span>
-            <div style="margin-left: 4rem;">
+            <h2 style="top: 2rem;font-size: 5rem;position: relative;left: 2rem;color: #e5e3e3;font-weight: 100; z-index: 0;">01</h2>
+            <div style="margin-left: 4rem; z-index: 2;">
               <h3>CHOOSE DESIGN</h3>
               <p>UNIQUE DESIGNS</p>
               <p>ONE HONGBAO = 1 TOKEN</p>
               <p>SUBMIT YOUR OWN DESIGN</p>
             </div>
-            <h2 style="top: 2rem;font-size: 5rem;position: relative;left: 2rem;color: #dbd9d9;">01</h2>
           </span>
         </b-col>
         <b-col cols="12" md="12" lg="4" class="pt-3">
           <span>
-            <h2 style="top: 2rem;font-size: 5rem;position: relative;left: 2rem;color: #dbd9d9;">02</h2>
-            <div>
+            <h2 style="top: 2rem;font-size: 5rem;position: relative;left: 2rem;color: #e5e3e3;font-weight: 100;">02</h2>
+            <div style="margin-left: 4rem; z-index: 2;">
               <h3>FILL WITH CRYPTO</h3>
               <p>ETHER, DAI, TOKENS</p>
               <p>LIMITED EDITION HONGBAO</p>
@@ -144,8 +144,8 @@
         </b-col>
         <b-col cols="12" md="12" lg="4" class="pt-3">
           <span>
-            <h2 style="top: 2rem;font-size: 5rem;position: relative;left: 2rem;color: #dbd9d9;">03</h2>
-            <div>
+            <h2 style="top: 2rem;font-size: 5rem;position: relative;left: 2rem;color: #e5e3e3;font-weight: 100;">03</h2>
+            <div style="margin-left: 4rem; z-index: 2;">
               <h3>SEND HONGBAO</h3>
               <p>WECHAT, EMAIL, INSTAGRAM</p>
               <p>TELEGRAM, WEIBO</p>
