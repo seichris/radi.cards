@@ -412,7 +412,7 @@ body {
   margin: 0;
   padding: 0;
 
-  background-color: #ffffff;
+  background-color: #FAF6F6;
   background-image: url("/static/images/pattern.svg");
   background-repeat: repeat;
   background-attachment: static;

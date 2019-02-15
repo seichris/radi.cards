@@ -36,7 +36,7 @@ export default {
 @import "../../styles/variables.scss";
 
 .banner {
-  background: #ffffff;
+  background: #FAF6F6;
   box-sizing: border-box;
   width: 100%;
   position: fixed;
