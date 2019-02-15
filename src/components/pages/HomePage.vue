@@ -95,6 +95,72 @@
       </div>
     </section>
 
+    <section class="section">
+      <b-row>
+        <b-col cols="12" md="12" lg="4" class="pt-3 text-center">
+          <span v-if="totalSupply">
+            <p class="p--large">Total cards minted:</p>
+            <br>
+            <span class="badge badge-yellow badge-large">{{ parseFloat(totalSupply) + 106 + 176}}</span>
+            <br>radiCards
+            <br>
+            <br>
+          </span>
+          <span v-else>
+            <p class="p--large" style="opacity: 0.2;">Getting totals...</p>
+          </span>
+        </b-col>
+        <b-col cols="12" md="12" lg="4" class="pt-3 text-center">
+          <span v-if="giftedInEth && giftedInDai">
+            <p class="p--large">Gifted in cards so far:</p>
+            <br>
+            <span class="badge badge-yellow badge-large">
+              {{(parseFloat(giftedInEth)).toFixed(2)}}
+              <span
+                style="font-weight: normal; opacity: 0.3;"
+              >ETH &</span>
+              {{parseFloat(giftedInDai)}}
+              <span
+                style="font-weight: normal; opacity: 0.3;"
+              >DAI</span>
+            </span>
+            <br>Equals to $
+            <strong>{{Math.round((parseFloat(giftedInEth)) * usdPrice + parseFloat(giftedInDai) )}}</strong>
+            <br>
+            <br>
+          </span>
+          <span v-else>
+            <p class="p--large" style="opacity: 0.2;">Getting totals...</p>
+          </span>
+        </b-col>
+        <b-col cols="12" md="12" lg="4" class="pt-3 text-center">
+          <span v-if="giftedInEth && donatedInDai">
+            <p class="p--large">Donated to charity so far:</p>
+            <br>
+            <span class="badge badge-yellow badge-large">
+              {{(parseFloat(donatedInEth) + 5.12 +17.62).toFixed(2)}}
+              <span
+                style="font-weight: normal; opacity: 0.3;"
+              >ETH &</span>
+              {{parseFloat(donatedInDai)+60}}
+              <span
+                style="font-weight: normal; opacity: 0.3;"
+              >DAI</span>
+            </span>
+            <br>Equals to $
+            <strong>{{Math.round((parseFloat(donatedInEth) + 5.12 + 17.62) * usdPrice + parseFloat(donatedInDai) + 60 )}}</strong>
+            <br>
+            <br>
+          </span>
+          <span v-else>
+            <p class="p--large" style="opacity: 0.2;">Getting totals...</p>
+          </span>
+        </b-col>
+        <b-col cols="12" class="pt-3 text-center">
+          <router-link :to="{ name: 'cardshop' }" class="btn">Send a card</router-link>
+        </b-col>
+      </b-row>
+    </section>
     <section class="section section--credits">
       <windy-title class="smaller-heading" v-bind:text="$t('m.buidlt')"/>
       <div class="container" style="margin: 0 -2rem;">
@@ -257,9 +323,13 @@ export default {
   },
   computed: {
     ...mapState([
+      "donatedInEth",
+      "donatedInDai",
+      "giftedInEth",
+      "giftedInDai",
       "totalSupply",
-      "totalGifted",
       "usdPrice",
+      "cynPrice",
       "cards",
       "benefactors"
     ])
