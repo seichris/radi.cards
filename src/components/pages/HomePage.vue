@@ -118,7 +118,39 @@
       </b-row>
     </section>-->
 
-    <section class="section">
+    <section class="section" style="border: 1px solid #474747;">
+      <b-row>
+        <b-col cols="12" md="12" lg="4" class="pt-3 text-center">
+          <span>
+            <h2 style="top: 4rem; right: 2rem;">01</h2>
+            <h3>CHOOSE DESIGN</h3>
+            <p>UNIQUE DESIGNS</p>
+            <p>ONE HONGBAO = 1 TOKEN</p>
+            <p>SUBMIT YOUR OWN DESIGN</p>
+          </span>
+        </b-col>
+        <b-col cols="12" md="12" lg="4" class="pt-3 text-center">
+          <span>
+            <h2 style="top: 4rem; right: 2rem;">02</h2>
+            <h3>FILL WITH CRYPTO</h3>
+            <p>ETHER, DAI, TOKENS</p>
+            <p>LIMITED EDITION HONGBAO</p>
+            <p>SUBMIT YOUR SPECIAL TOKEN</p>
+          </span>
+        </b-col>
+        <b-col cols="12" md="12" lg="4" class="pt-3 text-center">
+          <span>
+            <h2 style="top: 4rem; right: 2rem;">03</h2>
+            <h3>SEND HONGBAO</h3>
+            <p>WECHAT, EMAIL, INSTAGRAM</p>
+            <p>TELEGRAM, WEIBO</p>
+            <p>SEND 1000 HONGBAO</p>
+          </span>
+        </b-col>
+      </b-row>
+    </section>
+
+    <section class="section" style="border: 1px solid #474747;">
       <b-row>
         <b-col cols="12" md="12" lg="4" class="pt-3 text-center">
           <span v-if="totalSupply">
@@ -402,7 +434,7 @@
               <a href="https://eff.org" target="_blank">eff.org</a>
             </li>
             <li>
-              <router-link :to="{ name: 'charity' }" target="_blank">{{ $t("m.readMore")}}</router-link>
+              <router-link :to="{ name: 'charity' }">{{ $t("m.readMore")}}</router-link>
             </li>
           </ul>
         </div>
