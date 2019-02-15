@@ -118,33 +118,39 @@
       </b-row>
     </section>-->
 
-    <section class="section" style="border: 1px solid #474747;">
+    <section class="section">
       <b-row>
-        <b-col cols="12" md="12" lg="4" class="pt-3 text-center">
+        <b-col cols="12" md="12" lg="4" class="pt-3">
           <span>
-            <h2 style="top: 4rem; right: 2rem;">01</h2>
-            <h3>CHOOSE DESIGN</h3>
-            <p>UNIQUE DESIGNS</p>
-            <p>ONE HONGBAO = 1 TOKEN</p>
-            <p>SUBMIT YOUR OWN DESIGN</p>
+            <div style="margin-left: 4rem;">
+              <h3>CHOOSE DESIGN</h3>
+              <p>UNIQUE DESIGNS</p>
+              <p>ONE HONGBAO = 1 TOKEN</p>
+              <p>SUBMIT YOUR OWN DESIGN</p>
+            </div>
+            <h2 style="top: 2rem;font-size: 5rem;position: relative;left: 2rem;color: #dbd9d9;">01</h2>
           </span>
         </b-col>
-        <b-col cols="12" md="12" lg="4" class="pt-3 text-center">
+        <b-col cols="12" md="12" lg="4" class="pt-3">
           <span>
-            <h2 style="top: 4rem; right: 2rem;">02</h2>
-            <h3>FILL WITH CRYPTO</h3>
-            <p>ETHER, DAI, TOKENS</p>
-            <p>LIMITED EDITION HONGBAO</p>
-            <p>SUBMIT YOUR SPECIAL TOKEN</p>
+            <h2 style="top: 2rem;font-size: 5rem;position: relative;left: 2rem;color: #dbd9d9;">02</h2>
+            <div>
+              <h3>FILL WITH CRYPTO</h3>
+              <p>ETHER, DAI, TOKENS</p>
+              <p>LIMITED EDITION HONGBAO</p>
+              <p>SUBMIT YOUR SPECIAL TOKEN</p>
+            </div>
           </span>
         </b-col>
-        <b-col cols="12" md="12" lg="4" class="pt-3 text-center">
+        <b-col cols="12" md="12" lg="4" class="pt-3">
           <span>
-            <h2 style="top: 4rem; right: 2rem;">03</h2>
-            <h3>SEND HONGBAO</h3>
-            <p>WECHAT, EMAIL, INSTAGRAM</p>
-            <p>TELEGRAM, WEIBO</p>
-            <p>SEND 1000 HONGBAO</p>
+            <h2 style="top: 2rem;font-size: 5rem;position: relative;left: 2rem;color: #dbd9d9;">03</h2>
+            <div>
+              <h3>SEND HONGBAO</h3>
+              <p>WECHAT, EMAIL, INSTAGRAM</p>
+              <p>TELEGRAM, WEIBO</p>
+              <p>SEND 1000 HONGBAO</p>
+            </div>
           </span>
         </b-col>
       </b-row>
