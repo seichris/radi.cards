@@ -495,5 +495,13 @@ export default {
     padding: 15px;
     border: 1px solid black;
   }
+
+  .headerslider .card__meta {
+    display: none !important;
+  }
+
+  .headerslider .card__image {
+    box-shadow: 0 0.25rem 1rem rgba(39,39,39,.1) !important;
+  }
 }
 </style>
