@@ -118,7 +118,6 @@
     </section>-->
 
     <section class="section">
-      <h2 style="text-align: center;">{{ $t("m.buidlt")}}</h2>
       <b-row>
         <b-col cols="12" md="12" lg="4" class="pt-3 text-center">
           <span v-if="totalSupply">
@@ -180,7 +179,7 @@
           </span>
         </b-col>
       </b-row>
-      <b-row>
+      <!--<b-row>
         <b-col cols="12" xs="12" md="4" lg="4" class="communityColumn">
           <strong>{{ $t("m.buidltCC")}}</strong>
           <ul>
@@ -292,10 +291,11 @@
             </li>
           </ul>
         </b-col>
-      </b-row>
+      </b-row>-->
     </section>
-    <!--<section class="section section--credits">
-      <windy-title class="smaller-heading" v-bind:text="$t('m.buidlt')"/>
+
+    <section class="section section--credits">
+      <h2 style="text-align: center;">{{ $t("m.buidlt")}}</h2>
       <div class="container" style="margin: 0 -2rem;">
         <div class="col-md-4 col-xs-12 communityColumn">
           <strong>{{ $t("m.buidltCC")}}</strong>
@@ -335,7 +335,6 @@
             </li>
           </ul>
         </div>
-
         <div class="col-md-4 col-xs-12 communityColumn">
           <strong>{{ $t("m.communities")}}</strong>
           <ul>
@@ -383,7 +382,6 @@
             </li>
           </ul>
         </div>
-
         <div class="col-md-4 col-xs-12 communityColumn">
           <strong>{{ $t("m.donations")}}</strong>
           <ul>
@@ -411,7 +409,7 @@
           </ul>
         </div>
       </div>
-    </section>-->
+    </section>
 
     <cookiebanner></cookiebanner>
   </div>
