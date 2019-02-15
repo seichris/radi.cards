@@ -495,10 +495,10 @@ export default {
 }
 
 .headerslider .card {
-  max-height: 1rem !important;
+  max-height: 20rem !important;
 }
 
-.headerslider figcaption {
+.headerslider .card__meta {
   display: none !important;
 }
 
