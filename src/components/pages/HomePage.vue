@@ -118,7 +118,7 @@
     </section>-->
 
     <section class="section">
-      <h2 style="text-align: center;">{{ $t("m.buidlt")}}<h2/>
+      <h2 style="text-align: center;">{{ $t("m.buidlt")}}</h2>
       <b-row>
         <b-col cols="12" md="12" lg="4" class="pt-3 text-center">
           <span v-if="totalSupply">
