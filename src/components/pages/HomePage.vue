@@ -1,14 +1,16 @@
 
 <template>
-  <!--<section class="section section--hero p-0">
-    <blockquote class="blockquote--hero">
-      <h1 style="font-size: 3.5em;" class="hero">{{ $t("m.sendHongBao")}}</h1>
-      <h1 style="font-size: 3.5em;" class="hero">{{ $t("m.viaWeChat")}}</h1>
-      <br>
-      <h4>{{ $t("m.and")}}</h4>
-    </blockquote>
-  </section>
-  <section class="section">
+  <div class="container">
+    <section class="section section--hero p-0">
+      <blockquote class="blockquote--hero">
+        <h1 style="font-size: 3.5em;" class="hero">{{ $t("m.sendHongBao")}}</h1>
+        <h1 style="font-size: 3.5em;" class="hero">{{ $t("m.viaWeChat")}}</h1>
+        <br>
+        <h4>{{ $t("m.and")}}</h4>
+      </blockquote>
+    </section>
+  </div>
+  <!--<section class="section">
     <div class="card-slider headerslider" v-if="cards && cards.length > 0">
       <card
         style="margin-right: 1rem;"
