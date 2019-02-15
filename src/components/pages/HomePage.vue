@@ -476,7 +476,7 @@ export default {
 }
 
 .headerslider .card {
-  max-height: 19rem;
+  max-height: 18rem;
 }
 
 .headerslider {

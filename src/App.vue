@@ -586,9 +586,8 @@ footer {
 
 .card-slider {
   display: flex;
-  margin: 0 -1.25rem;
   padding: 2rem 1.25rem;
-  overflow-x: auto;
+  overflow: hidden;
   @media (max-width: 560px) {
     padding-top: 0;
   }
