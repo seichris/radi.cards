@@ -293,22 +293,10 @@
           <strong>{{ $t("m.buidltCC")}}</strong>
           <ul>
             <li>
-              <a href="https://pheme.app" target="_blank">pheme.app</a>
+              <a href="https://mbdoesthings.com" target="_blank">mbdoesthings.com</a>
             </li>
             <li>
-              <a href="https://d1labs.com" target="_blank">d1labs.com</a>
-            </li>
-            <li>
-              <a href="https://volca.tech" target="_blank">volca.tech</a>
-            </li>
-            <li>
-              <a href="https://github.com/SoIidarity" target="_blank">chris maree</a>
-            </li>
-            <li>
-              <a href="https://www.gustav.tech" target="_blank">gustav.tech</a>
-            </li>
-            <li>
-              <a href="https://chris.seifert.space" target="_blank">chris seifert</a>
+              <a href="http://blockrocket.tech" target="_blank">blockrocket.tech</a>
             </li>
             <li>
               <a href="https://cryptodecks.co" target="_blank">cryptodecks.co</a>
@@ -320,10 +308,25 @@
               <a href="https://lililashka.com" target="_blank">lililashka.com</a>
             </li>
             <li>
-              <a href="http://blockrocket.tech" target="_blank">blockrocket.tech</a>
+              <a href="https://github.com/SoIidarity" target="_blank">chris maree</a>
             </li>
             <li>
-              <a href="https://mbdoesthings.com" target="_blank">mbdoesthings.com</a>
+              <a href="https://d1labs.com" target="_blank">d1labs.com</a>
+            </li>
+            <li>
+              <a href="https://www.gustav.tech" target="_blank">gustav.tech</a>
+            </li>
+            <li>
+              <a href="https://pheme.app" target="_blank">pheme.app</a>
+            </li>
+            <li>
+              <a href="https://chris.seifert.space" target="_blank">chris seifert</a>
+            </li>
+            <li>
+              <a href="https://volca.tech" target="_blank">volca.tech</a>
+            </li>
+            <li>
+              <a href="https://github.com/seichris/radi.cards" target="_blank">{{ $t("m.helpBuidling")}}</a>
             </li>
           </ul>
         </div>
@@ -331,34 +334,10 @@
           <strong>{{ $t("m.communities")}}</strong>
           <ul>
             <li>
-              <a href="https://token.im/" target="_blank">imToken</a>
+              <a href="https://churchofconsensus.org" target="_blank ">churchofconsensus.org</a>
             </li>
             <li>
-              <a href="https://pixura.io" target="_blank ">pixura.io</a>
-            </li>
-            <li>
-              <a href="https://twitter.com/ETHBerlin" target="_blank ">ethberlin</a>
-            </li>
-            <li>
-              <a href="https://colony.io/" target="_blank">colony.io</a>
-            </li>
-            <li>
-              <a href="https://0xcert.org" target="_blank">0xcert.org</a>
-            </li>
-            <li>
-              <a href="https://twitter.com/meta_cartel" target="_blank">metacartel</a>
-            </li>
-            <li>
-              <a href="https://opensea.io/" target="_blank">opensea.io</a>
-            </li>
-            <li>
-              <a href="https://superrare.co" target="_blank">superrare.co</a>
-            </li>
-            <li>
-              <a href="https://blockpunk.net" target="_blank ">blockpunk.net</a>
-            </li>
-            <li>
-              <a href="https://blockcities.co" target="_blank">blockcities.co</a>
+              <a href="https://bounties.network" target="_blank">bounties.network</a>
             </li>
             <li>
               <a href="https://www.nervos.org/" target="_blank">Nervos Network</a>
@@ -367,10 +346,37 @@
               <a href="https://www.astroledger.org" target="_blank">astroledger.org</a>
             </li>
             <li>
-              <a href="https://bounties.network" target="_blank">bounties.network</a>
+              <a href="https://blockpunk.net" target="_blank ">blockpunk.net</a>
             </li>
             <li>
-              <a href="https://churchofconsensus.org" target="_blank ">churchofconsensus.org</a>
+              <a href="https://blockcities.co" target="_blank">blockcities.co</a>
+            </li>
+            <li>
+              <a href="https://superrare.co" target="_blank">superrare.co</a>
+            </li>
+            <li>
+              <a href="https://opensea.io/" target="_blank">opensea.io</a>
+            </li>
+            <li>
+              <a href="https://twitter.com/meta_cartel" target="_blank">metacartel</a>
+            </li>
+            <li>
+              <a href="https://0xcert.org" target="_blank">0xcert.org</a>
+            </li>
+            <li>
+              <a href="https://colony.io/" target="_blank">colony.io</a>
+            </li>
+            <li>
+              <a href="https://twitter.com/ETHBerlin" target="_blank ">ethberlin</a>
+            </li>
+            <li>
+              <a href="https://pixura.io" target="_blank ">pixura.io</a>
+            </li>
+            <li>
+              <a href="https://token.im/" target="_blank">imToken</a>
+            </li>
+            <li>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSevFEwxxa1INuSqXTfSM-_HTKiropuui13OhV_IqtGECDMefQ/viewform" target="_blank">{{ $t("m.submitDesign")}}</a>
             </li>
           </ul>
         </div>
@@ -378,13 +384,7 @@
           <strong>{{ $t("m.donations")}}</strong>
           <ul>
             <li>
-              <a href="https://eff.org" target="_blank">eff.org</a>
-            </li>
-            <li>
-              <a
-                href="https://helpdesk.unicef.org.nz/help/donate-to-unicef-via-cryptocurrencies"
-                target="_blank"
-              >unicef.org</a>
+              <a href="https://www.grassrootseconomics.org" target="_blank">grassrootseconomics.org</a>
             </li>
             <li>
               <a href="https://www.bitcoinvenezuela.com" target="_blank">bitcoinvenezuela.com</a>
@@ -393,10 +393,16 @@
               <a href="https://enlawfoundation.org" target="_blank">enlawfoundation.org</a>
             </li>
             <li>
-              <a href="https://www.grassrootseconomics.org" target="_blank">grassrootseconomics.org</a>
+              <a
+                href="https://helpdesk.unicef.org.nz/help/donate-to-unicef-via-cryptocurrencies"
+                target="_blank"
+              >unicef.org</a>
             </li>
             <li>
-              <router-link :to="{ name: 'charity' }" class="nav-link">{{ $t("m.readMore")}}</router-link>
+              <a href="https://eff.org" target="_blank">eff.org</a>
+            </li>
+            <li>
+              <router-link :to="{ name: 'charity' }">{{ $t("m.readMore")}}</router-link>
             </li>
           </ul>
         </div>

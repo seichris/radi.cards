@@ -677,7 +677,7 @@ code {
 }
 
 .headerslider .card {
-  animation: 70s linear infinite slideFromRight;
+  animation: 200s linear infinite slideFromRight;
 }
 
 .headerslider .card__meta {
