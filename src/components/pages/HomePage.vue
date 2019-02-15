@@ -40,23 +40,14 @@
         <b-col class cols="12" sm="12" md="4" lg="4">
           <img class="stepIcon" src="/static/images/choose_onesize.svg">
           <h5>{{ $t("m.Choose")}}</h5>
-          <span>{{ $t("m.coolHb")}}
-            <br>
-            <div class="hide-mobile">{{ $t("m.artists")}}</div>
-          </span>
         </b-col>
         <b-col class="stepMargin" cols="12" sm="12" md="4" lg="4">
           <img class="stepIcon" src="/static/images/deposit_onesize.svg">
           <h5>{{ $t("m.Deposit")}}</h5>
-          <span>{{ $t("m.ethOrDai")}}</span>
         </b-col>
         <b-col class="stepMargin" cols="12" sm="12" md="4" lg="4">
           <img class="stepIcon" src="/static/images/send_onesize.svg">
           <h5>{{ $t("m.Send")}}</h5>
-          <span>{{ $t("m.hb2f")}}
-            <br>
-            <div class="hide-mobile">{{ $t("m.wc&email")}}</div>
-          </span>
           <span>
             <br>
           </span>

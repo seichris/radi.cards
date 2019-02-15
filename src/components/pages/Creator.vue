@@ -84,10 +84,10 @@
                 <h4>{{ $t("m.customiseCard")}}</h4>
                 <p>{{ $t("m.customiseCardDesc")}}</p>
               </div>
-              <div class="input-label">
+              <!--<div class="input-label">
                 <img src="/static/icons/warning.svg" alt style="width: 0.9rem;">
                 {{ $t("m.addMessage")}}
-              </div>
+              </div>-->
               <b-form-textarea
                 id="textarea"
                 class="field"
@@ -321,7 +321,7 @@
           <div class="flex-column">
             <div class="step__title">
               <h4>{{ $t("m.ready")}}</h4>
-              <p>{{ $t("m.readyDesc")}}</p>
+              <!--<p>{{ $t("m.readyDesc")}}</p>-->
               <div class="flex-column">
                 <div v-if="formData.sendingMethod==='Self'">
                   <div class="alignleft">

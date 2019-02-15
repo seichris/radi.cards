@@ -28,7 +28,7 @@
 
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="https://github.com/RadiCards/radi.cards" target="_blank">
+            <a href="https://github.com/seichris/radi.cards" target="_blank">
               <img
                 border="0"
                 alt="Radi's Github"
