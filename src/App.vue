@@ -653,6 +653,17 @@ code {
 .loading-spinner {
   @include loadingSpinner();
 }
+
+.headerslider {
+  -webkit-overflow-scrolling: touch;
+  -webkit-scroll-snap-points-x: repeat(304px);
+  -ms-scroll-snap-points-x: repeat(304px);
+  scroll-snap-points-x: repeat(304px);
+  -webkit-scroll-snap-type: mandatory;
+  -ms-scroll-snap-type: mandatory;
+  scroll-snap-type: mandatory;
+}
+
 .headerslider .card__meta {
   display: none;
 }
