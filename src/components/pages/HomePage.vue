@@ -1,14 +1,7 @@
 
 <template>
-  <div class="container">
-    <section class="section section--hero p-0">
-      <blockquote class="blockquote--hero">
-        <h1 style="font-size: 3.5em;" class="hero">{{ $t("m.sendHongBao")}}</h1>
-        <h1 style="font-size: 3.5em;" class="hero">{{ $t("m.viaWeChat")}}</h1>
-        <br>
-        <h4>{{ $t("m.and")}}</h4>
-      </blockquote>
-    </section>
+  <div>
+    just some text
   </div>
   <!--<section class="section">
     <div class="card-slider headerslider" v-if="cards && cards.length > 0">
@@ -492,6 +485,18 @@ export default {
       }
     }
   }
+}
+
+headerslider .card {
+  max-height: 1rem;
+}
+
+headerslider figcaption {
+  display: none;
+}
+
+headerslider .card__image {
+  box-shadow: 0 0.25rem 1rem rgba(39,39,39,.1);
 }
 
 .steps {
