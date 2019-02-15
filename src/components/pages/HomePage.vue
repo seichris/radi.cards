@@ -494,15 +494,15 @@ export default {
   }
 }
 
-headerslider .card {
+.headerslider .card {
   max-height: 1rem;
 }
 
-headerslider figcaption {
+.headerslider figcaption {
   display: none;
 }
 
-headerslider .card__image {
+.headerslider .card__image {
   box-shadow: 0 0.25rem 1rem rgba(39,39,39,.1);
 }
 
