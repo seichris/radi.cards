@@ -181,34 +181,6 @@
     <main role="main">
       <router-view></router-view>
     </main>
-    <div class="topBar">
-      <div>
-        <div class="row">
-          <div class="col-lg-8">
-            <div v-if="account">
-              <strong>
-                {{ $t("m.myAddress")}}
-              </strong>
-              <clickable-address :eth-address="account"></clickable-address>|
-              <strong>{{ $t("m.myBalanceEth")}}</strong>
-              {{ethBalanceRound}} |
-              <strong>{{ $t("m.myBalanceDai")}}</strong>
-              {{daiBalanceRound}}
-              <div v-if="portisSignedIn">
-                You Signed in with Portis!
-                <input
-                  type="button"
-                  class="button button--subtle"
-                  @click="portis.showPortis()"
-                  value="Open Portis Window"
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div v-if="!account"></div>
-    </div>
     <footer class="footer container-fluid mt-5">
       <div class="row">
         <div class="col text-left small">
