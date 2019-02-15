@@ -1,43 +1,41 @@
 
 <template>
-
-  <section class="section section--hero p-0">
-    <blockquote class="blockquote--hero">
-      <h1 style="font-size: 3.5em;" class="hero">{{ $t("m.sendHongBao")}}</h1>
-      <h1 style="font-size: 3.5em;" class="hero">{{ $t("m.viaWeChat")}}</h1>
-      <br>
-      <h4>{{ $t("m.and")}}</h4>
-    </blockquote>
-  </section>
-<section class="section">
-  <div class="card-slider headerslider" v-if="cards && cards.length > 0">
-    <card
-      style="margin-right: 1rem;"
-      v-for="item in cards"
-      :key="item.tokenId"
-      :cdata="item"
-      v-if="item.cardActive"
-    >{{item}}</card>
-  </div>
-  <div v-else class="loading-container">
-    <div class="loading-spinner">
-      <div class="loading-spinner-inner">
-        <div class="holder">
-          <div class="box"></div>
-        </div>
-        <div class="holder">
-          <div class="box"></div>
-        </div>
-        <div class="holder">
-          <div class="box"></div>
-        </div>
-      </div>
-    </div>
-    <span class="text">{{ $t("m.gettingCards")}}</span>
-  </div>
-</section>
   <div class="container">
-
+      <section class="section section--hero p-0">
+        <blockquote class="blockquote--hero">
+          <h1 style="font-size: 3.5em;" class="hero">{{ $t("m.sendHongBao")}}</h1>
+          <h1 style="font-size: 3.5em;" class="hero">{{ $t("m.viaWeChat")}}</h1>
+          <br>
+          <h4>{{ $t("m.and")}}</h4>
+        </blockquote>
+      </section>
+    <section class="section">
+      <div class="card-slider headerslider" v-if="cards && cards.length > 0">
+        <card
+          style="margin-right: 1rem;"
+          v-for="item in cards"
+          :key="item.tokenId"
+          :cdata="item"
+          v-if="item.cardActive"
+        >{{item}}</card>
+      </div>
+      <div v-else class="loading-container">
+        <div class="loading-spinner">
+          <div class="loading-spinner-inner">
+            <div class="holder">
+              <div class="box"></div>
+            </div>
+            <div class="holder">
+              <div class="box"></div>
+            </div>
+            <div class="holder">
+              <div class="box"></div>
+            </div>
+          </div>
+        </div>
+        <span class="text">{{ $t("m.gettingCards")}}</span>
+      </div>
+    </section>
 
 
 
@@ -497,15 +495,15 @@ export default {
 }
 
 .headerslider .card {
-  max-height: 1rem;
+  max-height: 1rem !important;
 }
 
 .headerslider figcaption {
-  display: none;
+  display: none !important;
 }
 
 .headerslider .card__image {
-  box-shadow: 0 0.25rem 1rem rgba(39,39,39,.1);
+  box-shadow: 0 0.25rem 1rem rgba(39,39,39,.1) !important;
 }
 
 .steps {
