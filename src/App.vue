@@ -22,7 +22,7 @@
       <nav class="navbar navbar-expand-md">
         <router-link :to="{ name: 'home' }" class="navbar-brand">
           <h1>
-            <img src="/static/images/logo_cn.svg" alt="ethereum hongbao">
+            <img src="/static/images/logo_cn2.svg" alt="ethereum hongbao">
           </h1>
         </router-link>
 
