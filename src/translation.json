@@ -133,7 +133,11 @@
       "openNormalBrowser": "Please open the website in your browser.👆",
       "pleaseWait": "Please wait",
       "pleaseWait2": "Opening Portis login. Please wait...",
-      "readMore": "Read more..."
+      "readMore": "Read more...",
+      "cardsMinted": "cards minted",
+      "valueSent": "sent with cards",
+      "donatedStatistics": "donated to charity",
+      "loadingStatistics": "Loading statistics..."
     }
   },
   "zh": {
@@ -270,7 +274,11 @@
       "openNormalBrowser": "点击右上角，选择浏览器打开.👆",
       "pleaseWait": "请等一下。",
       "pleaseWait2": "打开Portis登录。 请等一下。",
-      "readMore": "阅读更多..."
+      "readMore": "阅读更多...",
+      "cardsMinted": "红包代币已创建",
+      "valueSent": "红包已发送",
+      "donatedStatistics": "已捐赠给慈善机构",
+      "loadingStatistics": "在载入信息..."
     }
   }
 }

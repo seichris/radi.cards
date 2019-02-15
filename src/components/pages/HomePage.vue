@@ -125,7 +125,7 @@
             <!--<p class="p--large">Total cards minted:</p>
             <br>-->
             <span class="badge badge-huge">{{ parseFloat(totalSupply) + 106 + 176}}</span>
-            <h3>cards minted</h3>
+            <h3>{{ $t("m.cardsMinted")}}</h3>
           </span>
           <span v-else>
             <p class="p--large" style="opacity: 0.2;">Getting totals...</p>
@@ -139,16 +139,14 @@
 
             <!--<br>Equals to
             <strong>{{Math.round((parseFloat(giftedInEth)) * usdPrice + parseFloat(giftedInDai) )}}</strong>-->
-            <h3>gifted cards</h3>
+            <h3>{{ $t("m.valueSent")}}</h3>
             <span class="badge">
-              {{(parseFloat(giftedInEth)).toFixed(2)}}
+              {{(parseFloat(giftedInEth)).toFixed(2)}}ETH
               <span
                 style="font-weight: normal; opacity: 0.3;"
-              >ETH &</span>
+              >&</span>
               {{parseFloat(giftedInDai)}}
-              <span
-                style="font-weight: normal; opacity: 0.3;"
-              >DAI</span>
+              <span>DAI</span>
             </span>
           </span>
           <span v-else>
@@ -162,20 +160,18 @@
             <span class="badge badge-huge">${{Math.round((parseFloat(donatedInEth) + 5.12 + 17.62) * usdPrice + parseFloat(donatedInDai) + 60 )}}</span>
             <!--<br>Equals to $
             <strong>{{Math.round((parseFloat(donatedInEth) + 5.12 + 17.62) * usdPrice + parseFloat(donatedInDai) + 60 )}}</strong>-->
-            <h3>donated to charity</h3>
+            <h3>{{ $t("m.donatedStatistics")}}</h3>
             <span class="badge">
-              {{(parseFloat(donatedInEth) + 5.12 +17.62).toFixed(2)}}
+              {{(parseFloat(donatedInEth) + 5.12 +17.62).toFixed(2)}}ETH
               <span
                 style="font-weight: normal; opacity: 0.3;"
-              >ETH &</span>
+              >&</span>
               {{parseFloat(donatedInDai)+60}}
-              <span
-                style="font-weight: normal; opacity: 0.3;"
-              >DAI</span>
+              <span>DAI</span>
             </span>
           </span>
           <span v-else>
-            <p class="p--large" style="opacity: 0.2;">Loading statistics...</p>
+            <p class="p--large" style="opacity: 0.2;">{{ $t("m.loadingStatistics")}}</p>
           </span>
         </b-col>
       </b-row>
@@ -295,7 +291,7 @@
     </section>
 
     <section class="section section--credits">
-      <h2 style="text-align: center;" class="pb-3">{{ $t("m.buidlt")}}</h2>
+      <h2 style="text-align: center;" class="pb-6">{{ $t("m.buidlt")}}</h2>
       <div class="container" style="margin: 0 -2rem;">
         <div class="col-md-4 col-xs-12 communityColumn">
           <strong>{{ $t("m.buidltCC")}}</strong>
