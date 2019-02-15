@@ -6,7 +6,7 @@
   padding: 0.5rem 1.5rem;
   border: none;
   border-radius: 0;
-  background: transparent;
+  background: $darkgray;
 
   font: inherit;
   line-height: 1.5rem;
@@ -19,14 +19,14 @@
     color: $white;
   }
   &:hover {
-    background: transparent;
+    background: $darkgray;
     color: $white;
   }
   &:focus {
     outline: none;
   }
   &.isSelected {
-    background: transparent;
+    background: $darkgray;
     color: $white;
   }
 
@@ -50,9 +50,11 @@
     color: $darkgray;
     padding:0.3rem;
     font-size: 0.9rem;
+    background: transparent;
 
     &:hover {
       color: black;
+      background: transparent;
     }
     &:visited {
       color: black;
@@ -60,6 +62,7 @@
     &.isSelected {
       color: black;
       font-weight: bolder;
+      background: transparent;
     }
   }
 
