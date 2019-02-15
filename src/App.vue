@@ -654,11 +654,11 @@ code {
 .loading-spinner {
   @include loadingSpinner();
 }
-.headerslider .card__meta {
-  display: none !important;
+.headerslider .row {
+  display: none;
 }
 
 .headerslider .card__image {
-  box-shadow: 0 0.25rem 1rem rgba(39,39,39,.1) !important;
+  box-shadow: 0 0.25rem 1rem rgba(39,39,39,.1);
 }
 </style>
