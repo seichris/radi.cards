@@ -285,18 +285,6 @@ export default {
 @import "../../styles/variables.scss";
 @import "../../styles/mixins.scss";
 
-@keyframes slideFromRight {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(-1200%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
 // Card
 .card {
   $p_v: 1rem;
@@ -319,24 +307,13 @@ export default {
   cursor: pointer;
   margin: 0 auto;
 
-  animation: 70s linear infinite slideFromRight;
-
-  //transform: translateX(-1200%);
-  //-webkit-transform: translateX(-1200%);
-  //-moz-transform: translateX(-1200%);
-  //-o-transform: translateX(-1200%);
-  //transition: all 20s ease-in-out;
-  //-webkit-transition: all 20s ease-in-out;
-  //-moz-transition: all 20s ease-in-out;
-  //-o-transition: all 20s ease-in-out;
-
   &:hover {
     box-shadow: 0 0.25rem 1.5rem rgba($darkgray, 0.2);
     border-bottom: none;
   }
   &:not(.card--flippable):hover {
-    // transform: translateY(2px);
-    // transition: all 0.2s ease-in-out;
+    transform: translateY(2px);
+    transition: all 0.2s ease-in-out;
   }
 
   &--flippable {
