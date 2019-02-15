@@ -518,7 +518,7 @@ footer {
     margin-bottom: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
   &-large {
     padding-left: 1rem;

@@ -124,10 +124,8 @@
           <span v-if="totalSupply">
             <!--<p class="p--large">Total cards minted:</p>
             <br>-->
-            <span class="badge badge-large">{{ parseFloat(totalSupply) + 106 + 176}}</span>
-            <br>cards minted
-            <br>
-            <br>
+            <span class="badge badge-huge">{{ parseFloat(totalSupply) + 106 + 176}}</span>
+            <h3>cards minted</h3>
           </span>
           <span v-else>
             <p class="p--large" style="opacity: 0.2;">Getting totals...</p>
@@ -137,12 +135,11 @@
           <span v-if="giftedInEth && giftedInDai">
             <!--<p class="p--large">Gifted in cards so far:</p>
             <br>-->
-            <span class="badge badge-large">${{Math.round((parseFloat(giftedInEth)) * usdPrice + parseFloat(giftedInDai) )}}</span>
+            <span class="badge badge-huge">${{Math.round((parseFloat(giftedInEth)) * usdPrice + parseFloat(giftedInDai) )}}</span>
 
             <!--<br>Equals to
             <strong>{{Math.round((parseFloat(giftedInEth)) * usdPrice + parseFloat(giftedInDai) )}}</strong>-->
-            <br>gifted cards
-            <br>
+            <h3>gifted cards</h3>
             <span class="badge">
               {{(parseFloat(giftedInEth)).toFixed(2)}}
               <span
@@ -162,12 +159,11 @@
           <span v-if="giftedInEth && donatedInDai">
             <!--<p class="p--large">Donated to charity so far:</p>
             <br>-->
-            <span class="badge badge-large">${{Math.round((parseFloat(donatedInEth) + 5.12 + 17.62) * usdPrice + parseFloat(donatedInDai) + 60 )}}</span>
+            <span class="badge badge-huge">${{Math.round((parseFloat(donatedInEth) + 5.12 + 17.62) * usdPrice + parseFloat(donatedInDai) + 60 )}}</span>
             <!--<br>Equals to $
             <strong>{{Math.round((parseFloat(donatedInEth) + 5.12 + 17.62) * usdPrice + parseFloat(donatedInDai) + 60 )}}</strong>-->
-            <br>donated to charity
-            <br>
-            <span class="badge badge-large">
+            <h3>donated to charity</h3>
+            <span class="badge">
               {{(parseFloat(donatedInEth) + 5.12 +17.62).toFixed(2)}}
               <span
                 style="font-weight: normal; opacity: 0.3;"
@@ -179,7 +175,7 @@
             </span>
           </span>
           <span v-else>
-            <p class="p--large" style="opacity: 0.2;">Getting totals...</p>
+            <p class="p--large" style="opacity: 0.2;">Loading statistics...</p>
           </span>
         </b-col>
       </b-row>
