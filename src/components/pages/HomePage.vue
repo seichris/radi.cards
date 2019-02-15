@@ -5,6 +5,8 @@
       <blockquote class="blockquote--hero">
         <h1 style="font-size: 3.5em;" class="hero">{{ $t("m.sendHongBao")}}</h1>
         <h1 style="font-size: 3.5em;" class="hero">{{ $t("m.viaWeChat")}}</h1>
+        <br>
+        <h4>{{ $t("m.and")}}</h4>
 
         <!--- <img src="/static/images/title2.png">
         <br>
@@ -92,7 +94,7 @@
           <span v-if="totalSupply">
             <p class="p--large">Total cards minted:</p>
             <br>
-            <span class="badge badge-yellow badge-large">{{ parseFloat(totalSupply) + 106 + 176}}</span>
+            <span class="badge badge-large">{{ parseFloat(totalSupply) + 106 + 176}}</span>
             <br>radiCards
             <br>
             <br>
@@ -105,7 +107,7 @@
           <span v-if="giftedInEth && giftedInDai">
             <p class="p--large">Gifted in cards so far:</p>
             <br>
-            <span class="badge badge-yellow badge-large">
+            <span class="badge badge-large">
               {{(parseFloat(giftedInEth)).toFixed(2)}}
               <span
                 style="font-weight: normal; opacity: 0.3;"
@@ -128,7 +130,7 @@
           <span v-if="giftedInEth && donatedInDai">
             <p class="p--large">Donated to charity so far:</p>
             <br>
-            <span class="badge badge-yellow badge-large">
+            <span class="badge badge-large">
               {{(parseFloat(donatedInEth) + 5.12 +17.62).toFixed(2)}}
               <span
                 style="font-weight: normal; opacity: 0.3;"
@@ -146,9 +148,6 @@
           <span v-else>
             <p class="p--large" style="opacity: 0.2;">Getting totals...</p>
           </span>
-        </b-col>
-        <b-col cols="12" class="pt-3 text-center">
-          <router-link :to="{ name: 'cardshop' }" class="btn">Send a card</router-link>
         </b-col>
       </b-row>
     </section>
