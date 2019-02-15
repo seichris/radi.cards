@@ -128,7 +128,7 @@
             <h3>{{ $t("m.cardsMinted")}}</h3>
           </span>
           <span v-else>
-            <p class="p--large" style="opacity: 0.2;">Getting totals...</p>
+            <p class="p--large" style="opacity: 0.2;">{{ $t("m.loadingStatistics")}}</p>
           </span>
         </b-col>
         <b-col cols="12" md="12" lg="4" class="pt-3 text-center">
@@ -140,17 +140,15 @@
             <!--<br>Equals to
             <strong>{{Math.round((parseFloat(giftedInEth)) * usdPrice + parseFloat(giftedInDai) )}}</strong>-->
             <h3>{{ $t("m.valueSent")}}</h3>
-            <span class="badge">
+            <span style="font-weight: normal; opacity: 0.3;">
               {{(parseFloat(giftedInEth)).toFixed(2)}}ETH
-              <span
-                style="font-weight: normal; opacity: 0.3;"
-              >&</span>
+              <span>&</span>
               {{parseFloat(giftedInDai)}}
               <span>DAI</span>
             </span>
           </span>
           <span v-else>
-            <p class="p--large" style="opacity: 0.2;">Getting totals...</p>
+            <p class="p--large" style="opacity: 0.2;">{{ $t("m.loadingStatistics")}}</p>
           </span>
         </b-col>
         <b-col cols="12" md="12" lg="4" class="pt-3 text-center">
@@ -161,11 +159,9 @@
             <!--<br>Equals to $
             <strong>{{Math.round((parseFloat(donatedInEth) + 5.12 + 17.62) * usdPrice + parseFloat(donatedInDai) + 60 )}}</strong>-->
             <h3>{{ $t("m.donatedStatistics")}}</h3>
-            <span class="badge">
+            <span style="font-weight: normal; opacity: 0.3;">
               {{(parseFloat(donatedInEth) + 5.12 +17.62).toFixed(2)}}ETH
-              <span
-                style="font-weight: normal; opacity: 0.3;"
-              >&</span>
+              <span>&</span>
               {{parseFloat(donatedInDai)+60}}
               <span>DAI</span>
             </span>
