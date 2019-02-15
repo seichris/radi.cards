@@ -402,7 +402,7 @@
               <a href="https://eff.org" target="_blank">eff.org</a>
             </li>
             <li>
-              <router-link :to="{ name: 'charity' }">{{ $t("m.readMore")}}</router-link>
+              <router-link :to="{ name: 'charity' }" target="_blank">{{ $t("m.readMore")}}</router-link>
             </li>
           </ul>
         </div>
