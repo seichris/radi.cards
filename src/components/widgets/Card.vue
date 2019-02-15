@@ -289,8 +289,11 @@ export default {
   0% {
     transform: translateX(0);
   }
-  100% {
+  50% {
     transform: translateX(-1200%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
@@ -316,7 +319,7 @@ export default {
   cursor: pointer;
   margin: 0 auto;
 
-  animation: 35s linear 0s 1 slideFromRight;
+  animation: 70s linear infinite slideFromRight;
 
   //transform: translateX(-1200%);
   //-webkit-transform: translateX(-1200%);
