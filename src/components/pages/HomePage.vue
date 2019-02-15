@@ -38,30 +38,15 @@
     </section>
 
 
-
-
-
-
-
-
-
-
-
-    <section class="section section--hero p-0">
+    <!--<section class="section section--hero p-0">
       <blockquote class="blockquote--hero">
         <h1 style="font-size: 3.5em;" class="hero">{{ $t("m.sendHongBao")}}</h1>
         <h1 style="font-size: 3.5em;" class="hero">{{ $t("m.viaWeChat")}}</h1>
         <br>
         <h4>{{ $t("m.and")}}</h4>
-
-        <!--- <img src="/static/images/title2.png">
-        <br>
-        <img src="/static/images/title1.png">-->
       </blockquote>
-
       <router-link :to="{ name: 'cardshop' }" class="btn">{{ $t("m.sendEthHongbao")}}</router-link>
-
-      <!--<div class="compatible">
+      <div class="compatible">
         <h5>{{ $t("m.compatibleWith")}}</h5>
         <div class="icons">
           <div>
@@ -77,14 +62,11 @@
             <span>DAI</span>
           </div>
         </div>
-      </div>-->
+      </div>
     </section>
 
-
-
     <section class="section">
-      <!--<windy-title class="hide-mobile" v-bind:text="$t('m.chooseFrom')"></windy-title>-->
-
+      <windy-title class="hide-mobile" v-bind:text="$t('m.chooseFrom')"></windy-title>
       <div class="card-slider" v-if="cards && cards.length > 0">
         <card
           style="margin-right: 1rem;"
@@ -111,12 +93,11 @@
         </div>
         <span class="text">{{ $t("m.gettingCards")}}</span>
       </div>
-    </section>
+    </section>-->
 
     <section class="section">
       <!--<windy-title class="smaller-heading" v-bind:text="$t('m.send3Steps')"></windy-title>
       <br>-->
-
       <b-row class="steps">
         <b-col class cols="12" sm="12" md="4" lg="4">
           <img class="stepIcon" src="/static/images/choose_onesize.svg">
