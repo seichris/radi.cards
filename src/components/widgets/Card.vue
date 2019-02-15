@@ -316,7 +316,7 @@ export default {
   cursor: pointer;
   margin: 0 auto;
 
-  animation: 20s ease-in-out 0s 1 slideFromRight;
+  animation: 35s linear 0s 1 slideFromRight;
 
   //transform: translateX(-1200%);
   //-webkit-transform: translateX(-1200%);
