@@ -9,7 +9,7 @@
           <h4>{{ $t("m.and")}}</h4>
         </blockquote>
       </section>
-    <section class="section">
+    <section class="section" style="min-height: 30rem;">
       <div class="card-slider headerslider" v-if="cards && cards.length > 0">
         <card
           style="margin-right: 1rem;"
@@ -495,15 +495,13 @@ export default {
 }
 
 .headerslider .card {
-  max-height: 20rem !important;
+  max-height: 19rem;
 }
 
-.headerslider .card__meta {
-  display: none !important;
-}
-
-.headerslider .card__image {
-  box-shadow: 0 0.25rem 1rem rgba(39,39,39,.1) !important;
+.headerslider {
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 .steps {

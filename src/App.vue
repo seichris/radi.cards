@@ -654,7 +654,7 @@ code {
 .loading-spinner {
   @include loadingSpinner();
 }
-.headerslider .row {
+.headerslider .card__meta {
   display: none;
 }
 
