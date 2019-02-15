@@ -127,9 +127,9 @@
             <span class="badge badge-huge">{{ parseFloat(totalSupply) + 106 + 176}}</span>
             <h3>{{ $t("m.cardsMinted")}}</h3>
           </span>
-          <span v-else>
+          <!--<span v-else>
             <p class="p--large" style="opacity: 0.2;">{{ $t("m.loadingStatistics")}}</p>
-          </span>
+          </span>-->
         </b-col>
         <b-col cols="12" md="12" lg="4" class="pt-3 text-center">
           <span v-if="giftedInEth && giftedInDai">
@@ -166,9 +166,9 @@
               <span>DAI</span>
             </span>
           </span>
-          <span v-else>
+          <!--<span v-else>
             <p class="p--large" style="opacity: 0.2;">{{ $t("m.loadingStatistics")}}</p>
-          </span>
+          </span>-->
         </b-col>
       </b-row>
       <!--<b-row>

@@ -310,14 +310,12 @@ export default {
   transform: translateX(-1200%);
   transition: all 20s ease-in-out;
 
-
-
   &:hover {
     box-shadow: 0 0.25rem 1.5rem rgba($darkgray, 0.2);
     border-bottom: none;
   }
   &:not(.card--flippable):hover {
-    transform: translate(-1200%, 2px);
+    transform: translateY(2px);
     transition: all 0.2s ease-in-out;
   }
 
