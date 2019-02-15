@@ -8,6 +8,7 @@
           <br>
           <h3>{{ $t("m.and")}}</h3>
         </blockquote>
+        <router-link :to="{ name: 'cardshop' }" class="btn">{{ $t("m.sendEthHongbao")}}</router-link>
       </section>
     <section class="section" style="min-height: 30rem;">
       <div class="card-slider headerslider" v-if="cards && cards.length > 0">
@@ -121,10 +122,10 @@
       <b-row>
         <b-col cols="12" md="12" lg="4" class="pt-3 text-center">
           <span v-if="totalSupply">
-            <p class="p--large">Total cards minted:</p>
-            <br>
+            <!--<p class="p--large">Total cards minted:</p>
+            <br>-->
             <span class="badge badge-large">{{ parseFloat(totalSupply) + 106 + 176}}</span>
-            <br>radiCards
+            <br>cards minted
             <br>
             <br>
           </span>
@@ -134,9 +135,15 @@
         </b-col>
         <b-col cols="12" md="12" lg="4" class="pt-3 text-center">
           <span v-if="giftedInEth && giftedInDai">
-            <p class="p--large">Gifted in cards so far:</p>
+            <!--<p class="p--large">Gifted in cards so far:</p>
+            <br>-->
+            <span class="badge badge-large">${{Math.round((parseFloat(giftedInEth)) * usdPrice + parseFloat(giftedInDai) )}}</span>
+
+            <!--<br>Equals to
+            <strong>{{Math.round((parseFloat(giftedInEth)) * usdPrice + parseFloat(giftedInDai) )}}</strong>-->
+            <br>gifted cards
             <br>
-            <span class="badge badge-large">
+            <span class="badge">
               {{(parseFloat(giftedInEth)).toFixed(2)}}
               <span
                 style="font-weight: normal; opacity: 0.3;"
@@ -146,10 +153,6 @@
                 style="font-weight: normal; opacity: 0.3;"
               >DAI</span>
             </span>
-            <br>Equals to $
-            <strong>{{Math.round((parseFloat(giftedInEth)) * usdPrice + parseFloat(giftedInDai) )}}</strong>
-            <br>
-            <br>
           </span>
           <span v-else>
             <p class="p--large" style="opacity: 0.2;">Getting totals...</p>
@@ -157,7 +160,12 @@
         </b-col>
         <b-col cols="12" md="12" lg="4" class="pt-3 text-center">
           <span v-if="giftedInEth && donatedInDai">
-            <p class="p--large">Donated to charity so far:</p>
+            <!--<p class="p--large">Donated to charity so far:</p>
+            <br>-->
+            <span class="badge badge-large">${{Math.round((parseFloat(donatedInEth) + 5.12 + 17.62) * usdPrice + parseFloat(donatedInDai) + 60 )}}</span>
+            <!--<br>Equals to $
+            <strong>{{Math.round((parseFloat(donatedInEth) + 5.12 + 17.62) * usdPrice + parseFloat(donatedInDai) + 60 )}}</strong>-->
+            <br>donated to charity
             <br>
             <span class="badge badge-large">
               {{(parseFloat(donatedInEth) + 5.12 +17.62).toFixed(2)}}
@@ -169,10 +177,6 @@
                 style="font-weight: normal; opacity: 0.3;"
               >DAI</span>
             </span>
-            <br>Equals to $
-            <strong>{{Math.round((parseFloat(donatedInEth) + 5.12 + 17.62) * usdPrice + parseFloat(donatedInDai) + 60 )}}</strong>
-            <br>
-            <br>
           </span>
           <span v-else>
             <p class="p--large" style="opacity: 0.2;">Getting totals...</p>
@@ -295,7 +299,7 @@
     </section>
 
     <section class="section section--credits">
-      <h2 style="text-align: center;">{{ $t("m.buidlt")}}</h2>
+      <h2 style="text-align: center;" class="pb-3">{{ $t("m.buidlt")}}</h2>
       <div class="container" style="margin: 0 -2rem;">
         <div class="col-md-4 col-xs-12 communityColumn">
           <strong>{{ $t("m.buidltCC")}}</strong>
