@@ -16,7 +16,7 @@
       "Send": "Send via WeChat",
       "chooseFrom": "Choose from our collection",
       "gettingCards": "Getting cards...",
-      "buidlt": "Buidl-t with <3 on Ethereum and IPFS",
+      "buidlt": "Buidl-t with ❤️ by the RadiCards community",
       "buidltCC": "Buidl-t on Ethereum and IPFS",
       "communities": "Our creative community",
       "donations": "Charities we support",
@@ -132,7 +132,8 @@
       "SwitchToMainnet": "! Switch to the mainnet to interact with this DApp!",
       "openNormalBrowser": "Please open the website in your browser.👆",
       "pleaseWait": "Please wait",
-      "pleaseWait2": "Opening Portis login. Please wait..."
+      "pleaseWait2": "Opening Portis login. Please wait...",
+      "readMore": "Read more..."
     }
   },
   "zh": {
@@ -268,7 +269,8 @@
       "SwitchToMainnet": "！ 切换到主网与此DApp交互！",
       "openNormalBrowser": "点击右上角，选择浏览器打开.👆",
       "pleaseWait": "请等一下。",
-      "pleaseWait2": "打开Portis登录。 请等一下。"
+      "pleaseWait2": "打开Portis登录。 请等一下。",
+      "readMore": "阅读更多..."
     }
   }
 }

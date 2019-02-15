@@ -262,6 +262,9 @@
             <li>
               <a href="https://enlawfoundation.org" target="_blank">enlawfoundation.org</a>
             </li>
+            <li>
+              <router-link :to="{ name: 'charity' }" class="nav-link">{{ $t("m.readMore")}}</router-link>
+            </li>
           </ul>
         </div>
       </div>
