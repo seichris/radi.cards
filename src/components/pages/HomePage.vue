@@ -118,38 +118,40 @@
       </b-row>
     </section>-->
 
-    <section class="section">
+    <section class="section" style=" padding-bottom: 6rem; padding-top: 0; ">
       <b-row>
         <b-col cols="12" md="12" lg="4" class="pt-3">
           <span>
-            <h2 style="top: 2rem;font-size: 5rem;position: relative;left: 2rem;color: #e5e3e3;font-weight: 100; z-index: 0;">01</h2>
+            <h2 style="top: 1rem;font-size: 5rem;position: relative;left: 2rem;color: #e5e3e3;font-weight: 100; z-index: 0;">01</h2>
             <div style="margin-left: 4rem; z-index: 2;">
               <h3>CHOOSE DESIGN</h3>
-              <p>UNIQUE DESIGNS</p>
-              <p>ONE HONGBAO = 1 TOKEN</p>
-              <p>SUBMIT YOUR OWN DESIGN</p>
+              <p>Unique designs from our artists</p>
+              <p>DApp cards /w limited features</p>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSevFEwxxa1INuSqXTfSM-_HTKiropuui13OhV_IqtGECDMefQ/viewform" target="_blank">
+                <p>Submit your own cards!</p>
+              </p>
             </div>
           </span>
         </b-col>
         <b-col cols="12" md="12" lg="4" class="pt-3">
           <span>
-            <h2 style="top: 2rem;font-size: 5rem;position: relative;left: 2rem;color: #e5e3e3;font-weight: 100;">02</h2>
+            <h2 style="top: 1rem;font-size: 5rem;position: relative;left: 2rem;color: #e5e3e3;font-weight: 100;">02</h2>
             <div style="margin-left: 4rem; z-index: 2;">
               <h3>FILL WITH CRYPTO</h3>
-              <p>ETHER, DAI, TOKENS</p>
-              <p>LIMITED EDITION HONGBAO</p>
-              <p>SUBMIT YOUR SPECIAL TOKEN</p>
+              <p>ETH, DAI, Tokens</p>
+              <p>Limited edition cards</p>
+              <p>List your token!</p>
             </div>
           </span>
         </b-col>
         <b-col cols="12" md="12" lg="4" class="pt-3">
           <span>
-            <h2 style="top: 2rem;font-size: 5rem;position: relative;left: 2rem;color: #e5e3e3;font-weight: 100;">03</h2>
+            <h2 style="top: 1rem;font-size: 5rem;position: relative;left: 2rem;color: #e5e3e3;font-weight: 100;">03</h2>
             <div style="margin-left: 4rem; z-index: 2;">
               <h3>SEND HONGBAO</h3>
-              <p>WECHAT, EMAIL, INSTAGRAM</p>
-              <p>TELEGRAM, WEIBO</p>
-              <p>SEND 1000 HONGBAO</p>
+              <p>Wechat, Instagram, Email</p>
+              <p>Telegram, Weibo</p>
+              <p>Send 1000 cards at once!</p>
             </div>
           </span>
         </b-col>
