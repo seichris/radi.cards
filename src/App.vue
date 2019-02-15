@@ -187,7 +187,6 @@
           <div class="col-lg-8">
             <div v-if="account">
               <strong>
-                <!-- <img border="0" alt="wallet" src="/static/icons/wallet.svg" width="20" height="20"> -->
                 {{ $t("m.myAddress")}}
               </strong>
               <clickable-address :eth-address="account"></clickable-address>|
@@ -212,12 +211,32 @@
     </div>
     <footer class="footer container-fluid mt-5">
       <div class="row">
-        <div class="col text-left">
+        <div class="col text-left small">
           <router-link :to="{ name: 'terms-of-service' }">{{ $t("m.terms")}}</router-link>&nbsp;&nbsp;
           <!-- <router-link :to="{ name: 'privacy-policy' }">Privacy Policy</router-link> -->
         </div>
         <div class="col text-right small">
-          <current-network></current-network>&nbsp;
+          <span v-if="account">
+            <strong>
+              {{ $t("m.myAddress")}}
+            </strong>
+            <clickable-address :eth-address="account"></clickable-address>|
+            <strong>{{ $t("m.myBalanceEth")}}</strong>
+            {{ethBalanceRound}} |
+            <strong>{{ $t("m.myBalanceDai")}}</strong>
+            {{daiBalanceRound}} |
+            <div v-if="portisSignedIn">
+              You Signed in with Portis!
+              <input
+                type="button"
+                class="button button--subtle"
+                @click="portis.showPortis()"
+                value="Open Portis Window"
+              >
+            </div>
+          </span>
+
+          <strong><current-network></current-network></strong>&nbsp;
           <clickable-address :eth-address="contractAddress"></clickable-address>
         </div>
       </div>

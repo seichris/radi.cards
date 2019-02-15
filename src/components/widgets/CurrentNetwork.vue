@@ -1,6 +1,6 @@
 <template>
   <span class="current-network">
-    {{ currentNetwork }} Contract
+    {{ currentNetwork }} Contract:
   </span>
 </template>
 
