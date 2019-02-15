@@ -1,5 +1,49 @@
 
 <template>
+  <section class="section section--hero p-0">
+    <blockquote class="blockquote--hero">
+      <h1 style="font-size: 3.5em;" class="hero">{{ $t("m.sendHongBao")}}</h1>
+      <h1 style="font-size: 3.5em;" class="hero">{{ $t("m.viaWeChat")}}</h1>
+      <br>
+      <h4>{{ $t("m.and")}}</h4>
+    </blockquote>
+  </section>
+  <section class="section">
+    <div class="card-slider headerslider" v-if="cards && cards.length > 0">
+      <card
+        style="margin-right: 1rem;"
+        v-for="item in cards"
+        :key="item.tokenId"
+        :cdata="item"
+        v-if="item.cardActive"
+      >{{item}}</card>
+    </div>
+    <div v-else class="loading-container">
+      <div class="loading-spinner">
+        <div class="loading-spinner-inner">
+          <div class="holder">
+            <div class="box"></div>
+          </div>
+          <div class="holder">
+            <div class="box"></div>
+          </div>
+          <div class="holder">
+            <div class="box"></div>
+          </div>
+        </div>
+      </div>
+      <span class="text">{{ $t("m.gettingCards")}}</span>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
   <div class="container">
     <section class="section section--hero p-0">
       <blockquote class="blockquote--hero">
@@ -15,7 +59,7 @@
 
       <router-link :to="{ name: 'cardshop' }" class="btn">{{ $t("m.sendEthHongbao")}}</router-link>
 
-      <div class="compatible">
+      <!--<div class="compatible">
         <h5>{{ $t("m.compatibleWith")}}</h5>
         <div class="icons">
           <div>
@@ -31,34 +75,13 @@
             <span>DAI</span>
           </div>
         </div>
-      </div>
+      </div>-->
     </section>
 
-    <section class="section">
-      <windy-title class="smaller-heading" v-bind:text="$t('m.send3Steps')"></windy-title>
-      <br>
 
-      <b-row class="steps">
-        <b-col class cols="12" sm="12" md="4" lg="4">
-          <img class="stepIcon" src="/static/images/choose_onesize.svg">
-          <h5>{{ $t("m.Choose")}}</h5>
-        </b-col>
-        <b-col class="stepMargin" cols="12" sm="12" md="4" lg="4">
-          <img class="stepIcon" src="/static/images/deposit_onesize.svg">
-          <h5>{{ $t("m.Deposit")}}</h5>
-        </b-col>
-        <b-col class="stepMargin" cols="12" sm="12" md="4" lg="4">
-          <img class="stepIcon" src="/static/images/send_onesize.svg">
-          <h5>{{ $t("m.Send")}}</h5>
-          <span>
-            <br>
-          </span>
-        </b-col>
-      </b-row>
-    </section>
-    <br>
+
     <section class="section">
-      <windy-title class="hide-mobile" v-bind:text="$t('m.chooseFrom')"></windy-title>
+      <!--<windy-title class="hide-mobile" v-bind:text="$t('m.chooseFrom')"></windy-title>-->
 
       <div class="card-slider" v-if="cards && cards.length > 0">
         <card
@@ -86,6 +109,29 @@
         </div>
         <span class="text">{{ $t("m.gettingCards")}}</span>
       </div>
+    </section>
+
+    <section class="section">
+      <!--<windy-title class="smaller-heading" v-bind:text="$t('m.send3Steps')"></windy-title>
+      <br>-->
+
+      <b-row class="steps">
+        <b-col class cols="12" sm="12" md="4" lg="4">
+          <img class="stepIcon" src="/static/images/choose_onesize.svg">
+          <h5>{{ $t("m.Choose")}}</h5>
+        </b-col>
+        <b-col class="stepMargin" cols="12" sm="12" md="4" lg="4">
+          <img class="stepIcon" src="/static/images/deposit_onesize.svg">
+          <h5>{{ $t("m.Deposit")}}</h5>
+        </b-col>
+        <b-col class="stepMargin" cols="12" sm="12" md="4" lg="4">
+          <img class="stepIcon" src="/static/images/send_onesize.svg">
+          <h5>{{ $t("m.Send")}}</h5>
+          <span>
+            <br>
+          </span>
+        </b-col>
+      </b-row>
     </section>
 
     <section class="section">
@@ -444,6 +490,18 @@ export default {
       }
     }
   }
+}
+
+headerslider .card {
+  max-height: 1rem;
+}
+
+headerslider figcaption {
+  display: none;
+}
+
+headerslider .card__image {
+  box-shadow: 0 0.25rem 1rem rgba(39,39,39,.1);
 }
 
 .steps {
