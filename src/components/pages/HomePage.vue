@@ -6,7 +6,7 @@
           <h1 style="font-size: 3.5em;" class="hero">{{ $t("m.sendHongBao")}}</h1>
           <h1 style="font-size: 3.5em;" class="hero">{{ $t("m.viaWeChat")}}</h1>
           <br>
-          <h4>{{ $t("m.and")}}</h4>
+          <h3>{{ $t("m.and")}}</h3>
         </blockquote>
       </section>
     <section class="section" style="min-height: 30rem;">
@@ -37,7 +37,7 @@
       </div>
     </section>
 
-
+<!-- old heading and card slider -->
     <!--<section class="section section--hero p-0">
       <blockquote class="blockquote--hero">
         <h1 style="font-size: 3.5em;" class="hero">{{ $t("m.sendHongBao")}}</h1>
@@ -94,10 +94,10 @@
         <span class="text">{{ $t("m.gettingCards")}}</span>
       </div>
     </section>-->
-
-    <section class="section">
-      <!--<windy-title class="smaller-heading" v-bind:text="$t('m.send3Steps')"></windy-title>
-      <br>-->
+<!-- 3 steps how to -->
+    <!--<section class="section">
+      <windy-title class="smaller-heading" v-bind:text="$t('m.send3Steps')"></windy-title>
+      <br>
       <b-row class="steps">
         <b-col class cols="12" sm="12" md="4" lg="4">
           <img class="stepIcon" src="/static/images/choose_onesize.svg">
@@ -115,9 +115,10 @@
           </span>
         </b-col>
       </b-row>
-    </section>
+    </section>-->
 
     <section class="section">
+      <h2 style="text-align: center;">{{ $t("m.buidlt")}}<h2/>
       <b-row>
         <b-col cols="12" md="12" lg="4" class="pt-3 text-center">
           <span v-if="totalSupply">
@@ -179,8 +180,121 @@
           </span>
         </b-col>
       </b-row>
+      <b-row>
+        <b-col cols="12" xs="12" md="4" lg="4" class="communityColumn">
+          <strong>{{ $t("m.buidltCC")}}</strong>
+          <ul>
+            <li>
+              <a href="https://cryptodecks.co" target="_blank">cryptodecks.co</a>
+            </li>
+            <li>
+              <a href="https://knownorigin.io" target="_blank">knownorigin.io</a>
+            </li>
+            <li>
+              <a href="https://pheme.app" target="_blank">pheme.app</a>
+            </li>
+            <li>
+              <a href="https://d1labs.com" target="_blank">d1labs.com</a>
+            </li>
+            <li>
+              <a href="https://lililashka.com" target="_blank">lililashka.com</a>
+            </li>
+            <li>
+              <a href="http://blockrocket.tech" target="_blank">blockrocket.tech</a>
+            </li>
+            <li>
+              <a href="https://mbdoesthings.com" target="_blank">mbdoesthings.com</a>
+            </li>
+            <li>
+              <a href="https://github.com/SoIidarity" target="_blank">chris maree</a>
+            </li>
+            <li>
+              <a href="https://volca.tech" target="_blank">volca.tech</a>
+            </li>
+            <li>
+              <a href="https://www.gustav.tech" target="_blank">gustav.tech</a>
+            </li>
+            <li>
+              <a href="https://chris.seifert.space" target="_blank">chris seifert</a>
+            </li>
+          </ul>
+        </b-col>
+        <b-col cols="12" xs="12" md="4" lg="4" class="communityColumn">
+          <strong>{{ $t("m.communities")}}</strong>
+          <ul>
+            <li>
+              <a href="https://superrare.co" target="_blank">superrare.co</a>
+            </li>
+            <li>
+              <a href="https://pixura.io" target="_blank ">pixura.io</a>
+            </li>
+            <li>
+              <a href="https://bounties.network" target="_blank">bounties.network</a>
+            </li>
+            <li>
+              <a href="https://twitter.com/ETHBerlin" target="_blank ">ethberlin</a>
+            </li>
+            <li>
+              <a href="https://blockcities.co" target="_blank">blockcities.co</a>
+            </li>
+            <li>
+              <a href="https://blockpunk.net" target="_blank ">blockpunk.net</a>
+            </li>
+            <li>
+              <a href="https://0xcert.org" target="_blank">0xcert.org</a>
+            </li>
+            <li>
+              <a href="https://churchofconsensus.org" target="_blank ">churchofconsensus.org</a>
+            </li>
+            <li>
+              <a href="https://twitter.com/meta_cartel" target="_blank">metacartel</a>
+            </li>
+            <li>
+              <a href="https://opensea.io/" target="_blank">opensea.io</a>
+            </li>
+            <li>
+              <a href="https://colony.io/" target="_blank">colony.io</a>
+            </li>
+            <li>
+              <a href="https://www.astroledger.org" target="_blank">astroledger.org</a>
+            </li>
+            <li>
+              <a href="https://www.nervos.org/" target="_blank">Nervos Network</a>
+            </li>
+            <li>
+              <a href="https://token.im/" target="_blank">imToken</a>
+            </li>
+          </ul>
+        </b-col>
+        <b-col cols="12" xs="12" md="4" lg="4" class="communityColumn">
+          <strong>{{ $t("m.donations")}}</strong>
+          <ul>
+            <li>
+              <a href="https://www.grassrootseconomics.org" target="_blank">grassrootseconomics.org</a>
+            </li>
+            <li>
+              <a
+                href="https://helpdesk.unicef.org.nz/help/donate-to-unicef-via-cryptocurrencies"
+                target="_blank"
+              >unicef.org</a>
+            </li>
+            <li>
+              <a href="https://www.bitcoinvenezuela.com" target="_blank">bitcoinvenezuela.com</a>
+            </li>
+            <li>
+              <a href="https://eff.org" target="_blank">eff.org</a>
+            </li>
+            <li>
+              <a href="https://enlawfoundation.org" target="_blank">enlawfoundation.org</a>
+            </li>
+            <li>
+              <router-link :to="{ name: 'charity' }" class="nav-link">{{ $t("m.readMore")}}</router-link>
+            </li>
+          </ul>
+        </b-col>
+      </b-row>
     </section>
-    <section class="section section--credits">
+    <!--<section class="section section--credits">
       <windy-title class="smaller-heading" v-bind:text="$t('m.buidlt')"/>
       <div class="container" style="margin: 0 -2rem;">
         <div class="col-md-4 col-xs-12 communityColumn">
@@ -297,7 +411,7 @@
           </ul>
         </div>
       </div>
-    </section>
+    </section>-->
 
     <cookiebanner></cookiebanner>
   </div>
