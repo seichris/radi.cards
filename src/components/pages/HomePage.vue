@@ -10,7 +10,7 @@
         </blockquote>
         <router-link :to="{ name: 'cardshop' }" class="btn">{{ $t("m.sendEthHongbao")}}</router-link>
       </section>
-    <section class="section" style="min-height: 30rem;">
+    <section class="section hide-mobile" style="min-height: 30rem;">
       <div class="card-slider headerslider" v-if="cards && cards.length > 0">
         <card
           style="margin-right: 1rem;"
@@ -64,10 +64,10 @@
           </div>
         </div>
       </div>
-    </section>
+    </section>-->
 
-    <section class="section">
-      <windy-title class="hide-mobile" v-bind:text="$t('m.chooseFrom')"></windy-title>
+    <section class="section hide-desktop">
+      <!--<windy-title class="hide-mobile" v-bind:text="$t('m.chooseFrom')"></windy-title>-->
       <div class="card-slider" v-if="cards && cards.length > 0">
         <card
           style="margin-right: 1rem;"
@@ -77,7 +77,6 @@
           v-if="item.cardActive"
         >{{item}}</card>
       </div>
-
       <div v-else class="loading-container">
         <div class="loading-spinner">
           <div class="loading-spinner-inner">
@@ -94,7 +93,8 @@
         </div>
         <span class="text">{{ $t("m.gettingCards")}}</span>
       </div>
-    </section>-->
+    </section>
+
 <!-- 3 steps how to -->
     <!--<section class="section">
       <windy-title class="smaller-heading" v-bind:text="$t('m.send3Steps')"></windy-title>
@@ -678,6 +678,12 @@ export default {
 
 .hide-mobile {
   @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.hide-desktop {
+  @media (min-width: 768px) {
     display: none;
   }
 }

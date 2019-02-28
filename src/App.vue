@@ -664,7 +664,21 @@ code {
   scroll-snap-type: mandatory;
 }
 
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-5000%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 
+.headerslider .card {
+  animation: 200s linear infinite slideFromRight;
+}
 
 .headerslider .card__meta {
   display: none;
