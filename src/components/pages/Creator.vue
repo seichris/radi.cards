@@ -285,8 +285,8 @@
               type="button"
               class="button button--fullwidth"
               :disabled="!validateDonationMethod()"
-              @click="giveBirth"
-              v-bind:value="$t('m.createHongbao')"
+              @click="goToStep(3)"
+              value="NEXT"
             >
             <p
               v-if="formData.currency === 'ETH' && formData.valueInETH > ethBalance"
