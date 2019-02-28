@@ -159,26 +159,17 @@
     </section>
 
     <section class="section" style="border: 1px solid #474747;">
+      <h2 style="text-align: center; margin-bottom: 4rem; margin-top: 4rem">{{ $t("m.buidlt")}}</h2>
       <b-row>
         <b-col cols="12" md="12" lg="4" class="pt-3 text-center">
           <span v-if="totalSupply">
-            <!--<p class="p--large">Total cards minted:</p>
-            <br>-->
             <span class="badge badge-huge">{{ parseFloat(totalSupply) + 106 + 176}}</span>
             <h3>{{ $t("m.cardsMinted")}}</h3>
           </span>
-          <!--<span v-else>
-            <p class="p--large" style="opacity: 0.2;">{{ $t("m.loadingStatistics")}}</p>
-          </span>-->
         </b-col>
         <b-col cols="12" md="12" lg="4" class="pt-3 text-center">
           <span v-if="giftedInEth && giftedInDai">
-            <!--<p class="p--large">Gifted in cards so far:</p>
-            <br>-->
             <span class="badge badge-huge">${{Math.round((parseFloat(giftedInEth)) * usdPrice + parseFloat(giftedInDai) )}}</span>
-
-            <!--<br>Equals to
-            <strong>{{Math.round((parseFloat(giftedInEth)) * usdPrice + parseFloat(giftedInDai) )}}</strong>-->
             <h3>{{ $t("m.valueSent")}}</h3>
             <span style="font-weight: normal; opacity: 0.3;">
               {{(parseFloat(giftedInEth)).toFixed(2)}}ETH
@@ -193,11 +184,7 @@
         </b-col>
         <b-col cols="12" md="12" lg="4" class="pt-3 text-center">
           <span v-if="giftedInEth && donatedInDai">
-            <!--<p class="p--large">Donated to charity so far:</p>
-            <br>-->
             <span class="badge badge-huge">${{Math.round((parseFloat(donatedInEth) + 5.12 + 17.62) * usdPrice + parseFloat(donatedInDai) + 60 )}}</span>
-            <!--<br>Equals to $
-            <strong>{{Math.round((parseFloat(donatedInEth) + 5.12 + 17.62) * usdPrice + parseFloat(donatedInDai) + 60 )}}</strong>-->
             <h3>{{ $t("m.donatedStatistics")}}</h3>
             <span style="font-weight: normal; opacity: 0.3;">
               {{(parseFloat(donatedInEth) + 5.12 +17.62).toFixed(2)}}ETH
@@ -206,127 +193,11 @@
               <span>DAI</span>
             </span>
           </span>
-          <!--<span v-else>
-            <p class="p--large" style="opacity: 0.2;">{{ $t("m.loadingStatistics")}}</p>
-          </span>-->
         </b-col>
       </b-row>
-      <!--<b-row>
-        <b-col cols="12" xs="12" md="4" lg="4" class="communityColumn">
-          <strong>{{ $t("m.buidltCC")}}</strong>
-          <ul>
-            <li>
-              <a href="https://cryptodecks.co" target="_blank">cryptodecks.co</a>
-            </li>
-            <li>
-              <a href="https://knownorigin.io" target="_blank">knownorigin.io</a>
-            </li>
-            <li>
-              <a href="https://pheme.app" target="_blank">pheme.app</a>
-            </li>
-            <li>
-              <a href="https://d1labs.com" target="_blank">d1labs.com</a>
-            </li>
-            <li>
-              <a href="https://lililashka.com" target="_blank">lililashka.com</a>
-            </li>
-            <li>
-              <a href="http://blockrocket.tech" target="_blank">blockrocket.tech</a>
-            </li>
-            <li>
-              <a href="https://mbdoesthings.com" target="_blank">mbdoesthings.com</a>
-            </li>
-            <li>
-              <a href="https://github.com/SoIidarity" target="_blank">chris maree</a>
-            </li>
-            <li>
-              <a href="https://volca.tech" target="_blank">volca.tech</a>
-            </li>
-            <li>
-              <a href="https://www.gustav.tech" target="_blank">gustav.tech</a>
-            </li>
-            <li>
-              <a href="https://chris.seifert.space" target="_blank">chris seifert</a>
-            </li>
-          </ul>
-        </b-col>
-        <b-col cols="12" xs="12" md="4" lg="4" class="communityColumn">
-          <strong>{{ $t("m.communities")}}</strong>
-          <ul>
-            <li>
-              <a href="https://superrare.co" target="_blank">superrare.co</a>
-            </li>
-            <li>
-              <a href="https://pixura.io" target="_blank ">pixura.io</a>
-            </li>
-            <li>
-              <a href="https://bounties.network" target="_blank">bounties.network</a>
-            </li>
-            <li>
-              <a href="https://twitter.com/ETHBerlin" target="_blank ">ethberlin</a>
-            </li>
-            <li>
-              <a href="https://blockcities.co" target="_blank">blockcities.co</a>
-            </li>
-            <li>
-              <a href="https://blockpunk.net" target="_blank ">blockpunk.net</a>
-            </li>
-            <li>
-              <a href="https://0xcert.org" target="_blank">0xcert.org</a>
-            </li>
-            <li>
-              <a href="https://churchofconsensus.org" target="_blank ">churchofconsensus.org</a>
-            </li>
-            <li>
-              <a href="https://twitter.com/meta_cartel" target="_blank">metacartel</a>
-            </li>
-            <li>
-              <a href="https://opensea.io/" target="_blank">opensea.io</a>
-            </li>
-            <li>
-              <a href="https://colony.io/" target="_blank">colony.io</a>
-            </li>
-            <li>
-              <a href="https://www.astroledger.org" target="_blank">astroledger.org</a>
-            </li>
-            <li>
-              <a href="https://www.nervos.org/" target="_blank">Nervos Network</a>
-            </li>
-            <li>
-              <a href="https://token.im/" target="_blank">imToken</a>
-            </li>
-          </ul>
-        </b-col>
-        <b-col cols="12" xs="12" md="4" lg="4" class="communityColumn">
-          <strong>{{ $t("m.donations")}}</strong>
-          <ul>
-            <li>
-              <a href="https://www.grassrootseconomics.org" target="_blank">grassrootseconomics.org</a>
-            </li>
-            <li>
-              <a
-                href="https://helpdesk.unicef.org.nz/help/donate-to-unicef-via-cryptocurrencies"
-                target="_blank"
-              >unicef.org</a>
-            </li>
-            <li>
-              <a href="https://www.bitcoinvenezuela.com" target="_blank">bitcoinvenezuela.com</a>
-            </li>
-            <li>
-              <a href="https://eff.org" target="_blank">eff.org</a>
-            </li>
-            <li>
-              <a href="https://enlawfoundation.org" target="_blank">enlawfoundation.org</a>
-            </li>
-            <li>
-              <router-link :to="{ name: 'charity' }" class="nav-link">{{ $t("m.readMore")}}</router-link>
-            </li>
-          </ul>
-        </b-col>
-      </b-row>-->
     </section>
 
-    <section class="section section--credits text-center">
+    <!--<section class="section section--credits text-center">
       <h2 style="text-align: center; margin-bottom: 4rem; margin-top: 4rem">{{ $t("m.buidlt")}}</h2>
       <div class="container">
         <div class="col-md-4 col-xs-12 communityColumn">
@@ -447,7 +318,7 @@
           </ul>
         </div>
       </div>
-    </section>
+    </section>-->
 
     <cookiebanner></cookiebanner>
   </div>
