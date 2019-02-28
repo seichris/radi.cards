@@ -82,7 +82,6 @@
             <div class="step__info">
               <div class="step__title">
                 <h4>{{ $t("m.customiseCard")}}</h4>
-                <p>{{ $t("m.customiseCardDesc")}}</p>
               </div>
               <!--<div class="input-label">
                 <img src="/static/icons/warning.svg" alt style="width: 0.9rem;">
@@ -117,7 +116,6 @@
           <div class="flex-column">
             <div class="step__title">
               <h4>{{ $t("m.sendMethod")}}</h4>
-              <p>{{ $t("m.chooseSendMethod")}}</p>
             </div>
 
             <div class="fieldgroup--radio column">
@@ -125,7 +123,6 @@
               <div :class="['field field--radio', {'isSelected': formData.sendingMethod === 'QR'}]">
                 <input type="radio" id="selectQR" value="QR" v-model="formData.sendingMethod">
                 <label for="selectQR" class="field--radio__content">
-                  <p class="p--smallitalic">{{ $t("m.supported")}}</p>
                   <span v-if="formData.sendingMethod !== 'QR'" class="pretext">{{ $t("m.QR")}}</span>
                   <div v-if="formData.sendingMethod === 'QR'" class="sendOptionSelectedContent">
                     <p class="p--bold">{{ $t("m.QR")}}</p>
@@ -139,7 +136,6 @@
               >
                 <input type="radio" id="selectETH" value="ETH" v-model="formData.sendingMethod">
                 <label for="selectETH" class="field--radio__content">
-                  <p class="p--smallitalic">{{ $t("m.sendDirect")}}</p>
                   <span
                     v-if="formData.sendingMethod !== 'ETH'"
                     class="pretext"
@@ -162,7 +158,6 @@
               >
                 <input type="radio" id="selectSelf" value="Self" v-model="formData.sendingMethod">
                 <label for="selectSelf" class="field--radio__content">
-                  <p class="p--smallitalic">{{ $t("m.sendLater")}}</p>
                   <span
                     v-if="formData.sendingMethod !== 'Self'"
                     class="pretext"
