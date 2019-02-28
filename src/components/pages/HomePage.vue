@@ -158,8 +158,8 @@
       </b-row>
     </section>
 
-    <section class="section" style="border: 1px solid #474747;">
-      <h2 style="text-align: center; margin-bottom: 4rem; margin-top: 4rem">{{ $t("m.buidlt")}}</h2>
+    <section class="section" style="padding-bottom: 4rem;">
+      <h2 style="text-align: center; margin-bottom: 2rem; margin-top: 2rem">{{ $t("m.buidlt")}}</h2>
       <b-row>
         <b-col cols="12" md="12" lg="4" class="pt-3 text-center">
           <span v-if="totalSupply">
