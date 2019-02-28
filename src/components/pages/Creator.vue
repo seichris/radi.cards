@@ -273,17 +273,18 @@
             </div>
 
             <p class="margin">{{ $t("m.donateCharity")}}</p>
-            <select class="margin charity-drop" v-model="formData.benefactor">
-              <option v-for="item in benefactors" :value="item" v-bind:key="item.name">{{item.name}}</option>
-            </select>
-            <br>
-            <vue-slider
-              class="margin"
-              ref="slider"
-              v-bind="donationSliderOptions"
-              v-model="formData.percentage"
-              formatter="{value}%"
-            ></vue-slider>
+            <div class="row">
+              <select class="margin charity-drop col-4" v-model="formData.benefactor">
+                <option v-for="item in benefactors" :value="item" v-bind:key="item.name">{{item.name}}</option>
+              </select>
+              <vue-slider
+                class="margin col-4"
+                ref="slider"
+                v-bind="donationSliderOptions"
+                v-model="formData.percentage"
+                formatter="{value}%"
+              ></vue-slider>
+            </div>
             <br>
             <br>
             <input
