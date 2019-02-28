@@ -272,13 +272,14 @@
               </div>
             </div>
 
-            <p class="margin">{{ $t("m.donateCharity")}}</p>
-            <div class="row">
+            <h4 class="margin">{{ $t("m.donateCharity")}}</h4>
+            <div class="row" style="margin-left: 0;">
               <select class="margin charity-drop col-4" v-model="formData.benefactor">
                 <option v-for="item in benefactors" :value="item" v-bind:key="item.name">{{item.name}}</option>
               </select>
               <vue-slider
-                class="margin col-4"
+                class="margin col-8"
+                style="padding: 12px"
                 ref="slider"
                 v-bind="donationSliderOptions"
                 v-model="formData.percentage"
@@ -1427,7 +1428,7 @@ textarea {
     }
     .step__title {
       margin-top: 0;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
   }
 }
