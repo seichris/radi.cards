@@ -201,7 +201,6 @@
               <div :class="['field field--radio', {'isSelected': formData.currency === 'ETH'}]">
                 <input type="radio" id="selectETH" value="ETH" v-model="formData.currency">
                 <label for="selectETH" class="field--radio__content">
-                  <p class="p--smallitalic">{{ $t("m.topUpCrypto")}}</p>
                   <span v-if="formData.currency !== 'ETH'" class="pretext">{{ $t("m.sendEth")}}</span>
 
                   <div v-if="formData.currency === 'ETH'" class="sendOptionSelectedContent">
@@ -237,7 +236,6 @@
               <div :class="['field field--radio', {'isSelected': formData.currency === 'DAI'}]">
                 <input type="radio" id="selectDAI" value="DAI" v-model="formData.currency">
                 <label for="selectDAI" class="field--radio__content">
-                  <p class="p--smallitalic">{{ $t("m.topUpStable")}}</p>
                   <span v-if="formData.currency !== 'DAI'" class="pretext">{{ $t("m.sendStable")}}</span>
                   <div v-if="formData.currency === 'DAI'" class="sendOptionSelectedContent">
                     <p class="p--bold">{{ $t("m.sendStable")}}</p>
