@@ -668,7 +668,12 @@ code {
 }
 
 .headerslider .card {
-  animation: 200s linear infinite slideFromRight;
+  @media (max-width: 767px) {
+    animation: 400s linear infinite slideFromRight;
+  }
+  @media (min-width: 768px) {
+    animation: 200s linear infinite slideFromRight;
+  }
 }
 
 .headerslider .card__meta {

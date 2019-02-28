@@ -35,7 +35,7 @@
         </div>
         <span class="text">{{ $t("m.gettingCards")}}</span>
       </div>
-      <router-link :to="{ name: 'cardshop' }" class="btn">{{ $t("m.sendEthHongbao")}}</router-link>
+      <router-link :to="{ name: 'cardshop' }" class="btn" style=" margin-top: 22rem; ">{{ $t("m.sendEthHongbao")}}</router-link>
     </section>
 
 <!-- old heading and card slider -->
