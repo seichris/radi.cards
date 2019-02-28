@@ -588,8 +588,9 @@ footer {
   display: flex;
   padding: 2rem 1.25rem;
   overflow: hidden;
-  @media (max-width: 560px) {
+  @media (max-width: 767px) {
     padding-top: 0;
+    overflow-x: auto;
   }
 
   perspective: 1000px;
@@ -652,16 +653,6 @@ code {
 }
 .loading-spinner {
   @include loadingSpinner();
-}
-
-.headerslider {
-  -webkit-overflow-scrolling: touch;
-  -webkit-scroll-snap-points-x: repeat(304px);
-  -ms-scroll-snap-points-x: repeat(304px);
-  scroll-snap-points-x: repeat(304px);
-  -webkit-scroll-snap-type: mandatory;
-  -ms-scroll-snap-type: mandatory;
-  scroll-snap-type: mandatory;
 }
 
 @keyframes slideFromRight {

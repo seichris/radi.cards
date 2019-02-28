@@ -8,9 +8,8 @@
           <br>
           <h3>{{ $t("m.and")}}</h3>
         </blockquote>
-        <router-link :to="{ name: 'cardshop' }" class="btn">{{ $t("m.sendEthHongbao")}}</router-link>
       </section>
-    <section class="section hide-mobile" style="min-height: 30rem;">
+    <section class="section" style="min-height: 30rem;">
       <div class="card-slider headerslider" v-if="cards && cards.length > 0">
         <card
           style="margin-right: 1rem;"
@@ -36,6 +35,7 @@
         </div>
         <span class="text">{{ $t("m.gettingCards")}}</span>
       </div>
+      <router-link :to="{ name: 'cardshop' }" class="btn">{{ $t("m.sendEthHongbao")}}</router-link>
     </section>
 
 <!-- old heading and card slider -->
@@ -66,8 +66,8 @@
       </div>
     </section>-->
 
-    <section class="section hide-desktop">
-      <!--<windy-title class="hide-mobile" v-bind:text="$t('m.chooseFrom')"></windy-title>-->
+    <!--<section class="section hide-desktop">
+      <windy-title class="hide-mobile" v-bind:text="$t('m.chooseFrom')"></windy-title>
       <div class="card-slider" v-if="cards && cards.length > 0">
         <card
           style="margin-right: 1rem;"
@@ -93,7 +93,7 @@
         </div>
         <span class="text">{{ $t("m.gettingCards")}}</span>
       </div>
-    </section>
+    </section>-->
 
 <!-- 3 steps how to -->
     <!--<section class="section">
@@ -673,18 +673,6 @@ export default {
     width: 35%;
     padding-bottom: 0.6rem;
     padding-top: 0.6rem;
-  }
-}
-
-.hide-mobile {
-  @media (max-width: 767px) {
-    display: none;
-  }
-}
-
-.hide-desktop {
-  @media (min-width: 768px) {
-    display: none;
   }
 }
 
