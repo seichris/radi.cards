@@ -101,9 +101,8 @@
               <input
                 type="button"
                 class="button button--fullwidth"
-                :disabled="!formData.message"
-                @click="goToStep(1)"
-                value="NEXT"
+                @click="giveBirth"
+                v-bind:value="$t('m.createHongbao')"
               >
             </div>
           </div>
